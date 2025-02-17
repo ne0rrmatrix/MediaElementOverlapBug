@@ -43,9 +43,9 @@ public partial class MainPage : ContentPage {
             {
                 mediaElement.Source = MediaSource.FromResource("woods.mp4");
             }
-            mediaElement.Loaded += delegate {
-                mediaElement.Play();
-            };
+            mediaElement.MetadataTitle = "Texture View";
+            mediaElement.MetadataArtist = "Community Toolkit";
+            mediaElement.MetadataArtworkUrl = "https://lh3.googleusercontent.com/pw/AP1GczNRrebWCJvfdIau1EbsyyYiwAfwHS0JXjbioXvHqEwYIIdCzuLodQCZmA57GADIo5iB3yMMx3t_vsefbfoHwSg0jfUjIXaI83xpiih6d-oT7qD_slR0VgNtfAwJhDBU09kS5V2T5ZML-WWZn8IrjD4J-g=w1792-h1024-s-no-gm";
             mediaElement.ShouldShowPlaybackControls = true;
             mediaElement.ShouldAutoPlay = true;
             mediaElement.Aspect = Aspect.AspectFill;
